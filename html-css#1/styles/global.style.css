@@ -1,0 +1,45 @@
+header {
+  background-color: #ccc;
+  padding: 20px;
+}
+
+.container {
+  margin: 0 auto;
+  position: relative;
+  width: 940px;
+}
+
+nav {
+  position: absolute;
+  top: 110px;
+  right: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 0 0 15px;
+}
+
+nav a {
+  color: #000;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: #c78c19;
+  text-decoration: underline;
+}
+
+footer {
+  background: url("/assets/bg.jpg");
+  padding: 40px 0;
+  text-align: center;
+}
+footer p {
+  color: #fff;
+  font-size: 13px;
+  margin-top: 20px;
+}
