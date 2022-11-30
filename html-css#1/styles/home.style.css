@@ -1,38 +1,115 @@
-#banner {
+.banner {
   width: 100%;
 }
 
-.first-content {
-  background: #ccc;
-  padding: 30px;
+.title {
+  clear: left;
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0 0 1em;
   text-align: center;
 }
 
-#mission {
-  color: rgb(218, 24, 24);
-  font-size: 20px;
+.first-content {
+  background: #fefefe;
 }
 
-.items {
+.first-content p {
+  margin: 0 0 1em;
+}
+
+.utensils-image {
+  float: left;
+  margin: 0 20px 20px 0;
+  width: 120px;
+}
+
+.first-content strong {
+  font-weight: bold;
+}
+
+.first-content em {
   font-style: italic;
 }
 
-.benefits {
-  background: #fff;
-  padding: 20px;
+.first-content,
+.address,
+.benefits-content {
+  padding: 3em 0;
 }
 
-.benefits ul {
-  display: inline-block;
-  margin-right: 15%;
-  vertical-align: top;
-  width: 20%;
+.disclaimer-content,
+.benefits-content {
+  margin: 0 auto;
+  width: 940px;
+}
+
+.address {
+  background: linear-gradient(#fefefe, #888);
+}
+
+.address p {
+  margin: 0 0 2em;
+  text-align: center;
+}
+
+.map-content {
+  margin: 0 auto;
+  width: 940px;
+}
+
+
+.benefits {
+  background: #888;
 }
 
 .benefits h2 {
   text-align: center;
 }
 
+.benefits-content ul {
+  display: inline-block;
+  vertical-align: top;
+  width: 40%;
+}
+
+.benefits-content li {
+  line-height: 1.5em;
+}
+
+.benefits-content li::before {
+  content: "★ "
+}
+
+.benefits-content li:first-child {
+  font-weight: bold;
+}
+
 .benefits-image {
-  width: 50%;
+  box-shadow: 10px 10px 10px #000;
+  opacity: 1;
+  transition: 400ms;
+  width: 60%;
+}
+
+.benefits-image:hover {
+  opacity: 0.3;
+}
+
+.video {
+  margin: 2em 0 0;
+  width: 560px;
+}
+
+
+@media screen and (max-width: 480px) {
+  .disclaimer-content,
+  .benefits-content,
+  .map-content,
+  .video,
+  .benefits-content ul,
+  .benefits-image {
+    width: 100%;
+  }
+
 }
